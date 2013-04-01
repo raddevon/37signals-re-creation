@@ -1,4 +1,9 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* 
+Changed extension of this reset file to 'scss' to allow import into style.sass. 
+SASS does not yet allow pure CSS to be imported. This way, all styles will be 
+compiled and minified together when processed by CodeKit.
+
+http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
