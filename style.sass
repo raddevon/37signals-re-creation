@@ -1,2 +1,114 @@
 @import reset.scss
+@import "compass/css3/border-radius"
+@import "compass/css3/box-shadow"
+@import "compass/css3/images"
 
+// Clearfix 
+.clearfix 
+	display: inline-block
+	&:after
+		content: "\00A0"
+		display: block
+		clear: both
+		visibility: hidden
+		line-height: 0
+		height: 0
+ 
+html[xmlns] .clearfix 
+	display: block
+ 
+* html .clearfix 
+	height: 1%
+
+// end clearfix
+
+// Typography
+$sans: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif
+$serif: "CrimsonSemibold", "Times New Roman", Georgia, serif
+$italic: "CrimsonRomanItalic", "Times New Roman", Georgia, serif
+
+h3, h4, header, footer, .principles, [class*="product"]
+	font-family: $sans
+
+h1, h2, h5, h6
+	font-family: $serif
+	font-weight: 500
+
+header
+	font-size: 12px
+	color: #999
+	a
+		text-decoration: none
+		&:hover
+			color: #6699cc
+		&.sign-in
+			color: #18afe0
+			&:hover
+				color: #336699
+
+h1, h2, h3, h4, h5, h6
+	text-align: center
+
+h1
+	font-size: 54px
+	line-height: 1.05em
+h3
+	font-size: 21px
+	line-height: 2em
+	font-weight: bold
+h4
+	font-size: 14px
+	font-weight: bold
+	color: #cc0000
+	line-height: 1.4em
+h6
+	font-size: 19px
+	line-height: 3.8em
+
+a
+	color: #369
+
+// Spacing and layout styles
+body
+	padding: 28px 48px 28px 58px
+
+header
+	width: 100%
+	margin-bottom: 33px
+	.greeting
+		float: left
+		margin-top: 3px
+	.top-nav
+		float: right
+		li
+			display: inline
+			margin: 10px 10px
+
+.centered 
+	width: 825px
+	margin: auto
+	*
+		display: block
+		position: relative
+		margin: auto
+		text-align: center
+
+.logo
+	margin-bottom: 25px
+
+[class*="product"]
+	width: 680px
+	div
+		margin: 5px 21px
+		padding: 20px 15px
+		width: 148px
+		float: left
+		border: 1px solid rgba(#ccc, 0.3)
+		+border-radius(4px)
+		+box-shadow(rgba(#ccc,0.3) 0 0 2px 1px)
+		+background-image(linear-gradient(#fff, rgba(#ccc, 0.3)))
+	p
+		margin-top: 10px
+		font-size: 14px
+		line-height: 1.4em
+		color: #222
