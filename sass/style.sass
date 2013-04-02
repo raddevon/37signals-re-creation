@@ -22,6 +22,11 @@ html[xmlns] .clearfix
 
 // end clearfix
 
+// Colors
+$gray: #999
+$dark-gray: #666
+
+
 // Typography
 $sans: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif
 $serif: "CrimsonSemibold", "Times New Roman", Georgia, serif
@@ -36,7 +41,7 @@ h1, h2, h5, h6
 
 header
 	font-size: 12px
-	color: #999
+	color: $gray
 	a
 		text-decoration: none
 		&:hover
@@ -98,6 +103,19 @@ header
 
 [class*="product"]
 	width: 680px
+
+.products
+	div
+		padding: 20px 12px
+		width: 158px
+		float: left
+	p	
+		margin-top: 10px
+		font-size: 12px
+		line-height: 1.4em
+		color: $dark-gray
+
+.product-boxes
 	div
 		margin: 5px 21px
 		padding: 20px 15px
