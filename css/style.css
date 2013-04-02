@@ -169,14 +169,17 @@ header .top-nav li {
   margin-bottom: 25px;
 }
 
-[class*="product"] {
-  width: 680px;
+.products {
+  width: 570px;
 }
-
 .products div {
+  margin: 4px;
   padding: 20px 12px;
   width: 158px;
   float: left;
+}
+.products div:hover h3 {
+  color: #336699;
 }
 .products p {
   margin-top: 10px;
@@ -184,7 +187,13 @@ header .top-nav li {
   line-height: 1.4em;
   color: #666666;
 }
+.products h3 {
+  color: black;
+}
 
+.product-boxes {
+  width: 680px;
+}
 .product-boxes div {
   margin: 5px 21px;
   padding: 20px 15px;

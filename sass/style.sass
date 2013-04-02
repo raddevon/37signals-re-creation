@@ -25,6 +25,7 @@ html[xmlns] .clearfix
 // Colors
 $gray: #999
 $dark-gray: #666
+$dark-blue: #369
 
 
 // Typography
@@ -49,7 +50,7 @@ header
 		&.sign-in
 			color: #18afe0
 			&:hover
-				color: #336699
+				color: $dark-blue
 
 h1, h2, h3, h4, h5, h6
 	text-align: center
@@ -101,21 +102,25 @@ header
 .logo
 	margin-bottom: 25px
 
-[class*="product"]
-	width: 680px
-
 .products
+	width: 570px
 	div
+		margin: 4px
 		padding: 20px 12px
 		width: 158px
 		float: left
+		&:hover h3
+			color: $dark-blue
 	p	
 		margin-top: 10px
 		font-size: 12px
 		line-height: 1.4em
 		color: $dark-gray
+	h3
+		color: black
 
 .product-boxes
+	width: 680px
 	div
 		margin: 5px 21px
 		padding: 20px 15px
