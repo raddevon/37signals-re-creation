@@ -295,12 +295,12 @@ cite {
 blockquote {
   margin: 35px 0 30px 0 !important;
 }
-blockquote:first-child {
+blockquote.first {
   margin-top: 70px !important;
 }
 blockquote q {
   font-style: italic;
-  font-size: 21px;
+  font-size: 20px;
   color: #999999;
   line-height: 1.3em;
 }
