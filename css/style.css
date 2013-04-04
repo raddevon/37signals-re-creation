@@ -237,6 +237,7 @@ hr {
   display: none;
   border: none;
   margin: 38px 0 30px !important;
+  clear: both;
 }
 hr:after {
   content: "\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0";
