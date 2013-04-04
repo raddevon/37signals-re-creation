@@ -109,12 +109,21 @@ header
 		color: $dark-gray
 		line-height: 1.5em
 		font-size: 21px
+	> hr
+		display: none
+		border: none
+		margin: 38px 0 30px !important
+		clear: both
+		&:after
+			content: "\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0"
+			background: url(../images/img-hr.png) no-repeat center
 
 .logo
 	margin-bottom: 25px
 
 .products
 	width: 570px
+
 	div
 		margin: 4px
 		padding: 20px 12px
@@ -147,15 +156,6 @@ header
 		line-height: 1.4em
 		color: #222
 
-hr
-	display: none
-	border: none
-	margin: 38px 0 30px !important
-	clear: both
-	&:after
-		content: "\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0"
-		background: url(../images/img-hr.png) no-repeat center
-
 ol.principles
 	list-style-type: none
 	counter-reset: li
@@ -186,5 +186,26 @@ ol.principles
 			top: -10px
 			text-align: left !important
 
+cite
+	display: inline !important
+	font-style: italic
 
+#rework
+	float: left
+	margin-top: 40px
 
+blockquote
+	margin: 35px 0 30px 0 !important
+	&:first-child
+		margin-top: 70px !important
+	q
+		font-style: italic
+		font-size: 21px
+		color: $gray
+		line-height: 1.3em
+	cite
+		font-style: normal
+		font-family: $sans
+		font-size: 12px
+	p + p
+		margin-top: 15px !important

@@ -176,6 +176,16 @@ header .top-nav li {
   line-height: 1.5em;
   font-size: 21px;
 }
+.centered > hr {
+  display: none;
+  border: none;
+  margin: 38px 0 30px !important;
+  clear: both;
+}
+.centered > hr:after {
+  content: "\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0";
+  background: url(../images/img-hr.png) no-repeat center;
+}
 
 .logo {
   margin-bottom: 25px;
@@ -233,17 +243,6 @@ header .top-nav li {
   color: #222222;
 }
 
-hr {
-  display: none;
-  border: none;
-  margin: 38px 0 30px !important;
-  clear: both;
-}
-hr:after {
-  content: "\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0";
-  background: url(../images/img-hr.png) no-repeat center;
-}
-
 ol.principles {
   list-style-type: none;
   counter-reset: li;
@@ -277,4 +276,35 @@ ol.principles li:before {
   left: -45px;
   top: -10px;
   text-align: left !important;
+}
+
+cite {
+  display: inline !important;
+  font-style: italic;
+}
+
+#rework {
+  float: left;
+  margin-top: 40px;
+}
+
+blockquote {
+  margin: 35px 0 30px 0 !important;
+}
+blockquote:first-child {
+  margin-top: 70px !important;
+}
+blockquote q {
+  font-style: italic;
+  font-size: 21px;
+  color: #999999;
+  line-height: 1.3em;
+}
+blockquote cite {
+  font-style: normal;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font-size: 12px;
+}
+blockquote p + p {
+  margin-top: 15px !important;
 }
