@@ -244,6 +244,9 @@ hr:after {
   line-height: 1.4em;
   color: #222222;
 }
+.product-boxes h3 {
+  text-decoration: underline;
+}
 
 ol.principles {
   list-style-type: none;
