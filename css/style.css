@@ -141,6 +141,7 @@ a {
 
 body {
   padding: 28px 48px 28px 58px;
+  counter-reset: li;
 }
 
 header {
@@ -250,12 +251,8 @@ hr:after {
 
 ol.principles {
   list-style-type: none;
-  counter-reset: li;
   margin: 35px 20px 18px 35px;
   float: left;
-}
-ol.principles + ol {
-  counter-reset: li 4;
 }
 ol.principles li {
   position: relative;
