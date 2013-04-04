@@ -130,6 +130,11 @@ h4 {
   line-height: 1.4em;
 }
 
+h5 {
+  font-size: 21px;
+  margin: 10px 0 10px 0 !important;
+}
+
 h6 {
   font-size: 19px;
   line-height: 3.8em;
@@ -362,5 +367,20 @@ blockquote p + p {
 }
 .aside p:hover {
   text-decoration: underline;
+  color: #6699cc;
+}
+
+.row {
+  width: 825px;
+}
+.row > div {
+  width: 320px;
+  display: inline-block;
+}
+.row > div a {
+  text-decoration: none;
+  color: black;
+}
+.row > div a:hover {
   color: #6699cc;
 }
