@@ -27,6 +27,7 @@ $gray: #999
 $dark-gray: #666
 $light-gray: #ccc
 $dark-blue: #369
+$light-blue: #69c
 
 
 // Typography
@@ -47,7 +48,7 @@ header
 	a
 		text-decoration: none
 		&:hover
-			color: #6699cc
+			color: $light-blue
 		&.sign-in
 			color: #18afe0
 			&:hover
@@ -98,6 +99,7 @@ header
 .centered 
 	width: 825px
 	margin: auto
+	position: relative
 	*
 		display: block
 		position: relative
@@ -160,7 +162,7 @@ hr
 ol.principles
 	list-style-type: none
 	counter-reset: li
-	margin: 35px 20px 0 35px
+	margin: 35px 20px 18px 35px
 	float: left
 	+ ol
 		counter-reset: li 4
@@ -212,3 +214,27 @@ blockquote
 		font-size: 12px
 	p + p
 		margin-top: 15px !important
+
+#customers
+	background: url(../images/img-customers.png)
+	position: absolute
+	width: 140px
+	height: 100px
+	margin: 0 !important
+	left: -120px
+	top: -100px
+	&:hover
+		background: url(../images/img-customers.png) no-repeat 0 -104px
+	img
+		position: relative
+		left: 80px
+		top: 70px
+	p
+		position: relative
+		top: 68px
+		font-family: $sans
+		font-size: 10px
+		word-spacing: .01em
+		&:hover
+			text-decoration: underline
+			color: $light-blue

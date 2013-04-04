@@ -162,6 +162,7 @@ header .top-nav li {
 .centered {
   width: 825px;
   margin: auto;
+  position: relative;
 }
 .centered * {
   display: block;
@@ -247,7 +248,7 @@ hr:after {
 ol.principles {
   list-style-type: none;
   counter-reset: li;
-  margin: 35px 20px 0 35px;
+  margin: 35px 20px 18px 35px;
   float: left;
 }
 ol.principles + ol {
@@ -311,4 +312,33 @@ blockquote cite {
 }
 blockquote p + p {
   margin-top: 15px !important;
+}
+
+#customers {
+  background: url(../images/img-customers.png);
+  position: absolute;
+  width: 140px;
+  height: 100px;
+  margin: 0 !important;
+  left: -120px;
+  top: -100px;
+}
+#customers:hover {
+  background: url(../images/img-customers.png) no-repeat 0 -104px;
+}
+#customers img {
+  position: relative;
+  left: 80px;
+  top: 70px;
+}
+#customers p {
+  position: relative;
+  top: 68px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font-size: 10px;
+  word-spacing: 0.01em;
+}
+#customers p:hover {
+  text-decoration: underline;
+  color: #6699cc;
 }
