@@ -316,10 +316,8 @@ blockquote p + p {
 
 #customers {
   background: url(../images/img-customers.png);
-  position: absolute;
   width: 140px;
   height: 100px;
-  margin: 0 !important;
   left: -120px;
   top: -100px;
 }
@@ -327,18 +325,42 @@ blockquote p + p {
   background: url(../images/img-customers.png) no-repeat 0 -104px;
 }
 #customers img {
-  position: relative;
   left: 80px;
   top: 70px;
 }
 #customers p {
-  position: relative;
   top: 68px;
+}
+
+#rework-aside {
+  background: url(../images/img-crumple.png);
+  width: 140px;
+  height: 135px;
+  right: -110px;
+  top: -100px;
+}
+#rework-aside img {
+  left: -85px;
+  top: 65px;
+}
+#rework-aside p {
+  top: 108px;
+}
+
+.aside {
+  position: absolute;
+  margin: 0 !important;
+}
+.aside img {
+  position: relative;
+}
+.aside p {
+  position: relative;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
   font-size: 10px;
   word-spacing: 0.01em;
 }
-#customers p:hover {
+.aside p:hover {
   text-decoration: underline;
   color: #6699cc;
 }
