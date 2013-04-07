@@ -199,7 +199,7 @@ header .top-nav li {
   width: 570px;
 }
 .products div {
-  margin: 4px;
+  margin: 16px 4px;
   padding: 20px 12px;
   width: 158px;
   float: left;
@@ -370,7 +370,8 @@ blockquote p + p {
   width: 825px;
 }
 .row > div {
-  width: 320px;
+  width: 300px;
+  margin: 0 10px 20px 10px;
   display: inline-block;
 }
 .row > div a {
@@ -379,4 +380,21 @@ blockquote p + p {
 }
 .row > div a:hover {
   color: #6699cc;
+}
+.row > div p {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  color: #666666;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+.row:last-child > div {
+  margin-bottom: 0;
+}
+.row:last-child > div > p:last-child {
+  margin-bottom: 0;
+}
+.row hr {
+  border: none;
+  border-top: rgba(204, 204, 204, 0.3) 1px solid;
+  margin: 10px 0 15px 0;
 }

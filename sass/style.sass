@@ -129,7 +129,7 @@ header
 	width: 570px
 
 	div
-		margin: 4px
+		margin: 16px 4px
 		padding: 20px 12px
 		width: 158px
 		float: left
@@ -259,10 +259,25 @@ blockquote
 .row
 	width: 825px
 	> div
-		width: 320px
+		width: 300px
+		margin: 0 10px 20px 10px
 		display: inline-block
 		a
 			text-decoration: none
 			color: black
 			&:hover
 				color: $light-blue
+		p
+			font-family: $sans
+			color: $dark-gray
+			font-size: 12px
+			margin-bottom: 25px
+	&:last-child 
+		> div
+			margin-bottom: 0
+			> p:last-child
+				margin-bottom: 0
+	hr
+		border: none
+		border-top: rgba($light-gray, 0.3) 1px solid
+		margin: 10px 0 15px 0
