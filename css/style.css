@@ -398,3 +398,26 @@ blockquote p + p {
   border-top: rgba(204, 204, 204, 0.3) 1px solid;
   margin: 10px 0 15px 0;
 }
+
+.more a {
+  text-decoration: none;
+  font-size: 12px;
+  margin: 25px 0;
+}
+.more a:hover {
+  color: #6699cc;
+}
+
+.copyright {
+  font-size: 10px;
+  color: #999999;
+  margin: 70px 0;
+}
+.copyright a {
+  display: inline !important;
+  text-decoration: none;
+}
+.copyright a:hover {
+  color: #6699cc;
+  text-decoration: underline;
+}
