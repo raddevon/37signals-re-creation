@@ -176,7 +176,7 @@ header .top-nav li {
   margin: auto;
   text-align: center;
 }
-.centered > p {
+.centered > p, .centered > div > p {
   text-align: left !important;
   margin: 30px 0 !important;
   color: #666666;
@@ -331,6 +331,16 @@ blockquote p + p {
 }
 #customers p {
   top: 68px;
+}
+
+#customers-text {
+  float: left;
+  width: 620px;
+}
+
+#world {
+  float: right;
+  margin: 30px 5px 0 0;
 }
 
 #rework-aside {
