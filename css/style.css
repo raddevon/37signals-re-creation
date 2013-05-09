@@ -431,3 +431,16 @@ blockquote p + p {
   color: #6699cc;
   text-decoration: underline;
 }
+
+.product-boxes div img:first-child {
+  display: none;
+  position: absolute;
+  top: -40px;
+  left: 137px;
+}
+.product-boxes a:hover div img:first-child {
+  display: inline;
+}
+.product-boxes a:nth-child(3) img:first-child {
+  left: -6px;
+}
