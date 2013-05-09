@@ -15,7 +15,7 @@
 <body>
 	<header class="clearfix">
 		<div class="greeting">
-			Happy Sunday.
+			Happy <span class="day"></span>.
 		</div>
 		<nav>
 			<ul class="top-nav">
@@ -229,7 +229,7 @@
 					<p>Home</p>
 				</a>
 			</div>
-		
+
 			<p class="copyright">
 				All text and design is copyright &copy;1999-2013 37signals, LLC. All rights reserved. &nbsp;<a href="#">Privacy Policy</a>
 				&nbsp;<a href="#">Security information</a>
@@ -237,5 +237,13 @@
 			</p>
 		</footer>
 	</div>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+		var now = new Date();
+		var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+		var day = days[ now.getDay() ];
+		$('.day').text(day);
+	</script>
 </body>
 </html>
