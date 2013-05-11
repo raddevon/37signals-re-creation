@@ -444,3 +444,17 @@ blockquote p + p {
 .product-boxes a:nth-child(3) img:first-child {
   left: -6px;
 }
+
+.headline.hover {
+  margin-bottom: 40px;
+}
+.headline.hover h1 {
+  font-size: 42px;
+  line-height: 1.05em;
+  margin-bottom: 0.2em;
+}
+.headline.hover h6 {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.4em;
+}

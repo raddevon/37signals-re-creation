@@ -3,8 +3,8 @@
 @import "compass/css3/box-shadow"
 @import "compass/css3/images"
 
-// Clearfix 
-.clearfix 
+// Clearfix
+.clearfix
 	display: inline-block
 	&:after
 		content: "\00A0"
@@ -13,11 +13,11 @@
 		visibility: hidden
 		line-height: 0
 		height: 0
- 
-html[xmlns] .clearfix 
+
+html[xmlns] .clearfix
 	display: block
- 
-* html .clearfix 
+
+* html .clearfix
 	height: 1%
 
 // end clearfix
@@ -100,7 +100,7 @@ header
 			display: inline
 			margin: 10px 10px
 
-.centered 
+.centered
 	width: 825px
 	margin: auto
 	position: relative
@@ -135,7 +135,7 @@ header
 		float: left
 		&:hover h3
 			color: $dark-blue
-	p	
+	p
 		margin-top: 10px
 		font-size: 12px
 		line-height: 1.4em
@@ -248,7 +248,6 @@ blockquote
 		top: 65px
 	p
 		top: 108px
-		
 
 .aside
 	position: absolute
@@ -280,7 +279,7 @@ blockquote
 			color: $dark-gray
 			font-size: 12px
 			margin-bottom: 25px
-	&:last-child 
+	&:last-child
 		> div
 			margin-bottom: 0
 			> p:last-child
@@ -319,3 +318,13 @@ blockquote
 	a:nth-child(3) img:first-child
 		left: -6px
 
+.headline.hover
+	margin-bottom: 40px
+	h1
+		font-size: 42px
+		line-height: 1.05em
+		margin-bottom: 0.2em
+	h6
+		font-family: $sans
+		font-size: 14px
+		line-height: 1.4em

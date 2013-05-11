@@ -41,10 +41,14 @@
 		<div class="logo">
 			<img src="images/logo-37s-large.png" alt="37signals">
 		</div>
-		<h1>Making collaboration productive and enjoyable for people every day.</h1>
-		<h6>Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h6>
+		<div class="headline">
+			<h1>Making collaboration productive and enjoyable for people every day.</h1>
+			<h6>Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h6>
+		</div>
 		<div class="product-boxes clearfix">
-			<a href="#">
+			<a href="#"
+			data-headline="<a href='http://basecamp.com/'>Basecamp</a> is the project management tool you wish you had on your last project."
+			data-text="Are you still managing projects with email? Are you still using Excel for your to-do lists? It’s time to upgrade to Basecamp. Manage projects and collaborate with your team and clients the modern way.">
 				<div>
 					<img src="images/arrow-left.png" height="69" width="69" alt="Arrow">
 					<img src="images/logo-bc.png" alt="Basecamp">
@@ -53,7 +57,9 @@
 					<p>Used by millions for project management.</p>
 				</div>
 			</a>
-			<a href="#">
+			<a href="#"
+			data-headline="<a href='http://highrisehq.com/'>Highrise</a> remembers the important things about people you’d normally forget."
+			data-text="Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, and when to follow up next. Over 20,000,000 contacts are tracked using Highrise.">
 				<div>
 					<img src="images/arrow-left.png" height="69" width="69" alt="Arrow">
 					<img src="images/logo-hr.png" alt="Highrise">
@@ -62,7 +68,9 @@
 					<p>Know the people you do business with.</p>
 				</div>
 			</a>
-			<a href="#">
+			<a href="#"
+			data-headline="From near or far, <a href='http://campfirenow.com/'>Campfire</a> helps teams work together over the web in real-time."
+			data-text="Share ideas, discussions, concepts, images, code samples, videos, mockups, and documents in a real-time private chat room. It’s game changing. We couldn’t run our own business without Campfire.">
 				<div>
 					<img src="images/arrow-right.png" height="69" width="69" alt="Arrow">
 					<img src="images/logo-cf.png" alt="Campfire">
@@ -245,8 +253,28 @@
 		var now = new Date();
 		var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
+		// Sets the current day of the week
 		var day = days[ now.getDay() ];
+		// Adds day to the page
 		$('.day').text(day);
+
+		var defaultHeadline = 'Making collaboration productive and enjoyable for people every day.';
+		var defaultText = 'Frustration-free web-based apps for collaboration, sharing information, and making decisions.';
+
+		$('.product-boxes').delegate('a', 'mouseenter mouseleave', function(e) {
+			trigger = $(this);
+			if (e.type === 'mouseenter') {
+				$('.headline')
+							.addClass('hover')
+							.find('h1').html(trigger.data('headline')).end()
+							.find('h6').html(trigger.data('text'));
+			} else {
+				$('.headline')
+							.removeClass('hover')
+							.find('h1').html(defaultHeadline).end()
+							.find('h6').html(defaultText);
+			}
+		});
 	</script>
 </body>
 </html>
