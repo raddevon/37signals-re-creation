@@ -264,14 +264,15 @@
 		// Adds day to the page
 		$('.day').text(day);
 
-		var defaultHeadline = 'Making collaboration productive and enjoyable for people every day.';
-		var defaultText = 'Frustration-free web-based apps for collaboration, sharing information, and making decisions.';
-
+		// Event delegation for hovering product boxes
 		$('.product-boxes').delegate('a', 'mouseenter mouseleave', function(e) {
+			// Current context of this is the event trigger
 			trigger = $(this);
+			// Hide default and show the trigger's data-target attribute on enter
 			if (e.type === 'mouseenter') {
 				$('#default-headline').hide();
 				$(trigger.data('target')).show();
+			// Hide all hovers and show the default otherwise
 			} else {
 				$('.headline.hover').hide();
 				$('#default-headline').show();
