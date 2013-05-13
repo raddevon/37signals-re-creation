@@ -41,14 +41,24 @@
 		<div class="logo">
 			<img src="images/logo-37s-large.png" alt="37signals">
 		</div>
-		<div class="headline">
+		<div class="headline" id="default-headline">
 			<h1>Making collaboration productive and enjoyable for people every day.</h1>
 			<h6>Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h6>
 		</div>
+		<div class="headline hover" id="basecamp-hover">
+			<h1><a href='http://basecamp.com/'>Basecamp</a> is the project management tool you wish you had on your last project.</h1>
+			<h6>Are you still managing projects with email? Are you still using Excel for your to-do lists? It’s time to upgrade to Basecamp. Manage projects and collaborate with your team and clients the modern way.</h6>
+		</div>
+		<div class="headline hover" id="highrise-hover">
+			<h1><a href='http://highrisehq.com/'>Highrise</a> remembers the important things about people you’d normally forget.</h1>
+			<h6>Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, and when to follow up next. Over 20,000,000 contacts are tracked using Highrise.</h6>
+		</div>
+		<div class="headline hover" id="campfire-hover">
+			<h1>From near or far, <a href='http://campfirenow.com/'>Campfire</a> helps teams work together over the web in real-time.</h1>
+			<h6>Share ideas, discussions, concepts, images, code samples, videos, mockups, and documents in a real-time private chat room. It’s game changing. We couldn’t run our own business without Campfire.</h6>
+		</div>
 		<div class="product-boxes clearfix">
-			<a href="#"
-			data-headline="<a href='http://basecamp.com/'>Basecamp</a> is the project management tool you wish you had on your last project."
-			data-text="Are you still managing projects with email? Are you still using Excel for your to-do lists? It’s time to upgrade to Basecamp. Manage projects and collaborate with your team and clients the modern way.">
+			<a href="#" data-target="#basecamp-hover">
 				<div>
 					<img src="images/arrow-left.png" height="69" width="69" alt="Arrow">
 					<img src="images/logo-bc.png" alt="Basecamp">
@@ -57,9 +67,7 @@
 					<p>Used by millions for project management.</p>
 				</div>
 			</a>
-			<a href="#"
-			data-headline="<a href='http://highrisehq.com/'>Highrise</a> remembers the important things about people you’d normally forget."
-			data-text="Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, and when to follow up next. Over 20,000,000 contacts are tracked using Highrise.">
+			<a href="#" data-target="#highrise-hover">
 				<div>
 					<img src="images/arrow-left.png" height="69" width="69" alt="Arrow">
 					<img src="images/logo-hr.png" alt="Highrise">
@@ -68,9 +76,7 @@
 					<p>Know the people you do business with.</p>
 				</div>
 			</a>
-			<a href="#"
-			data-headline="From near or far, <a href='http://campfirenow.com/'>Campfire</a> helps teams work together over the web in real-time."
-			data-text="Share ideas, discussions, concepts, images, code samples, videos, mockups, and documents in a real-time private chat room. It’s game changing. We couldn’t run our own business without Campfire.">
+			<a href="#" data-target="#campfire-hover">
 				<div>
 					<img src="images/arrow-right.png" height="69" width="69" alt="Arrow">
 					<img src="images/logo-cf.png" alt="Campfire">
@@ -264,15 +270,11 @@
 		$('.product-boxes').delegate('a', 'mouseenter mouseleave', function(e) {
 			trigger = $(this);
 			if (e.type === 'mouseenter') {
-				$('.headline')
-							.addClass('hover')
-							.find('h1').html(trigger.data('headline')).end()
-							.find('h6').html(trigger.data('text'));
+				$('#default-headline').hide();
+				$(trigger.data('target')).show();
 			} else {
-				$('.headline')
-							.removeClass('hover')
-							.find('h1').html(defaultHeadline).end()
-							.find('h6').html(defaultText);
+				$('.headline.hover').hide();
+				$('#default-headline').show();
 			}
 		});
 	</script>

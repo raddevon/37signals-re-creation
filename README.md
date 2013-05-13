@@ -1,2 +1,2 @@
 #37signals Re-creation
-Here's my attempt at re-creating the look of 37signals. This project was part of Thinkful's Front-End Web Development course.
+Here's my attempt at re-creating the look of 37signals. This project was part of Thinkful's Front-End Web Development course. __Now with awesome hover effects!__
